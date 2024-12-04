@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web Dev Final</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+</head>
+<body>
+	<div class="contentContainer">
+		<div class="userInfo">
+			<div class="profile">
+				<img src="Img/profile.jpg" style="width: 33%; aspect-ratio: 6/7; object-fit: cover; object-position: center;">
+				<div>
+					<p class="intro">Name: Mia Collins</p>
+					<p class="intro">Age: 21</p>
+					<p class="intro">Location: New York, USA</p>
+					<p class="intro">Occupation: New York University Senior</p>
+				</div>
+			</div>
+			<hr style="color: #00b315;">
+			<div class="currentActivity">
+				<p class="intro" style="font-weight: 600;">Current Activity </p>
+				<div class="mousePos" id="mouse_position"></div>
+				<div class="clickHis" id="click_history"></div>
+
+
+			</div>
+		</div>
+
+		<div>
+			<h4 style="color: #e03fd3;">About this project..</h4>
+			<p style="color: #e03fd3; line-height: 140%;">In this era of hyper connectivity, where everything is linked through the internet, we enjoy convenience but also face heightened potential risks due to the accumulation of personal information. However, people often forget that the data from their simple touches or clicks, can be unknowingly leaked to others. This project aims to prompt reconsideration of these potential (and perhaps already ongoing) risks as a warning.</p>
+
+
+			<hr style="color: #e03fd3;">
+			<br>
+		</div>
+
+		<nav class="navBar">
+			<div class="navBox">
+				<a href="#instagram" class="navLink" style="font-weight: 400; font-size: 110%;">Instagram</a>
+				<a href="#youtube" class="navLink" style="font-weight: 400; font-size: 110%;">Youtube</a>
+			</div>
+		</nav>
+
+
+		<section id="instagram">
+			<div class="mediaContent1">
+				<div class="contentBox1">
+					<a href="Img/1.jpg" data-fancybox="gallery" data-caption="flying..?" onclick="recordedActivity('flying..?')">
+					  <img src="Img/1.jpg" class="hoverImg">
+					</a>
+				</div>
+
+				<div class="contentBox1">
+					<a href="Img/2.jpg" data-fancybox="gallery" data-caption="CLASSIC | Home Alone" onclick="recordedActivity('CLASSIC | Home Alone')">
+					  <img src="Img/2.jpg" class="hoverImg">
+					</a>
+				</div>
+
+				<div class="contentBox1">
+					<a href="Img/3.png" data-fancybox="gallery" data-caption="Winter Outfits for gentlemen ❄️✨" onclick="recordedActivity('Winter Outfits for gent...')">
+					  <img src="Img/3.png" class="hoverImg">
+					</a>
+				</div>
+
+				<div class="contentBox1">
+					<a href="Img/4.png" data-fancybox="gallery" data-caption="programming" onclick="recordedActivity('programming')">
+					  <img src="Img/4.png" class="hoverImg">
+					</a>
+				</div>
+
+				<div class="contentBox1">
+					<a href="Img/5.png" data-fancybox="gallery" data-caption="rosie. dec 6." onclick="recordedActivity('rosie. dec 6.')">
+					  <img src="Img/5.png" class="hoverImg">
+					</a>
+				</div>
+
+				<div class="contentBox1">
+					<a href="Img/6.png" data-fancybox="gallery" data-caption="Ready for battle" onclick="recordedActivity('Ready for battle')">
+					  <img src="Img/6.png" class="hoverImg">
+					</a>
+				</div>
+
+				
+			</div>
+		</section>
+
+
+		<section id="youtube">
+			<div class="mediaContent2">
+				<div class="contentBox2">
+					<a href="Img/Y1_grinch.mp4" data-fancybox="gallery" data-caption="The Grinch | You’re a Mean One, Mr. Grinch Lyric Video | Illumination" onclick="recordedActivity('The Grinch | You’re a Me...')">
+					  <img src="Img/Y1.png" class="hoverImg">
+					</a>
+					<p class="title">The Grinch | You’re a Mean One, Mr. Grinch Lyric Video | Illumination</p>
+				</div>
+
+				<div class="contentBox2">
+					<a href="Img/Y2_friends.mp4" data-fancybox="gallery" data-caption="The Underrated Ones From Season 3 | Friends" onclick="recordedActivity('The Underrated Ones Fr...')">
+					  <img src="Img/Y2.png" class="hoverImg">
+					</a>
+					<p class="title">The Underrated Ones From Season 3 | Friends</p>
+				</div>
+
+				<div class="contentBox2">
+					<a href="Img/Y3_wicked.mp4" data-fancybox="gallery" data-caption="Wicked - Official Trailer" onclick="recordedActivity('Wicked - Official Trailer')">
+					  <img src="Img/Y3.png" class="hoverImg" style="height: 500px;">
+					</a>
+					<p class="title">Wicked - Official Trailer</p>
+				</div>
+
+				<div class="contentBox2">
+					<a href="Img/Y4_christmasplaylist.mp4" data-fancybox="gallery" data-caption="My christmas old carol, happy holiday! 🎅🏻🤶🏻🎄" onclick="recordedActivity('My christmas old carol...')">
+					  <img src="Img/Y4.png" class="hoverImg">
+					</a>
+					<p class="title">My christmas old carol, happy holiday! 🎅🏻🤶🏻🎄</p>
+				</div>
+
+			</div>
+		</section>
+
+		
+		
+	</div>
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>
